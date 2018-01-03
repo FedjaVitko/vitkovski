@@ -1,0 +1,1 @@
+const smoothScroll = require('./smooth-scroll')

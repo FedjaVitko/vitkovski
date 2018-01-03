@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,900');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Space+Mono:400,700i');
+@import url('https://fonts.googleapis.com/css?family=Electrolize');
+@import url('https://fonts.googleapis.com/css?family=Merienda');
+
+$ff-ms: 'Space Mono', monospace;
+$ff-ss: 'Electrolize', sans-serif;
+$ff-cur: 'Merienda', cursive;
+
+$fw-n: 400;
+$fw-b: 900;
+
+@mixin sans-serif($fs, $ls: .15em, $color: lighten($gray, 27), $lh: 1, $fw: $fw-n) {
+    font-size: $fs;
+    letter-spacing: $ls;
+    color: $color;
+    line-height: $lh;   
+    font-family: $ff-ms;
+    font-weight: $fw;
+}
+
+
