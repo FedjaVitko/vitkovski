@@ -24,7 +24,7 @@ gulp.task('watch', ['sass', 'js'], function() {
 gulp.task('sass', function() {
     return gulp.src('app/scss/**/*.scss')
         .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('./css'))
+        .pipe(gulp.dest('app/css'))
         .pipe(browserSync.stream());
 });
 
