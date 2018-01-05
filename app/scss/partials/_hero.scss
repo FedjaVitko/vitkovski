@@ -7,23 +7,36 @@
     
     background: url('../img/home_background_2.png') center;
     background-repeat: no-repeat;
-    background-color: rgba(43, 62, 92, 0.938);
-    // background-color: rgba(74, 74, 75, 0.938);
+    background-color: rgba(43, 62, 92, 1);
+    // background-color: rgba(36, 143, 155, 0.9);
     background-size: cover;
 
     .name_first {
         letter-spacing: 8px;
+        
+        font-weight: 900;
         // background-color: rgba($accent, 0.15);
     }
 
     .name_last {
         letter-spacing: 8px;
+        
+        font-weight: 900;
         // background-color: rgba($accent, 0.15);
     }
 
     .name_space {
         background-color: none;
     }
+
+    .letter_v {
+        color: rgba($accent, 0.8);
+    }
+
+    // .letter_f {
+    //     color: red;
+    // }
+
 
     // .letter_v {
     //     font-family: $ff-cur;
@@ -148,8 +161,6 @@
         -webkit-animation: pulse 3s infinite ease;
         animation: pulse 3s infinite ease;
         animation-delay: 4s;
-        -moz-transition: all 1s ease;
-        transition: all 1s ease;
     }
     
     .pulse_5 {
@@ -211,9 +222,6 @@
         -webkit-transform: rotateZ(180deg);
         -moz-transform: rotateZ(180deg);
         transform: rotateZ(180deg);
-        -ms-transform: translate(0px, -20px); /* IE 9 */
-        -webkit-transform: translate(0px, -20px); /* Safari */
-        transform: translate(0px -20px);
     }
 
     .pulse_2:hover {
@@ -221,9 +229,6 @@
         -webkit-transform: rotateZ(180deg);
         -moz-transform: rotateZ(180deg);
         transform: rotateZ(180deg);
-        -ms-transform: translate(0px, -20px); /* IE 9 */
-        -webkit-transform: translate(0px, -20px); /* Safari */
-        transform: translate(0px -20px);
     }
 
     .pulse_3:hover {
@@ -231,9 +236,6 @@
         -webkit-transform: rotateZ(180deg);
         -moz-transform: rotateZ(180deg);
         transform: rotateZ(180deg);
-        -ms-transform: translate(0px, -20px); /* IE 9 */
-        -webkit-transform: translate(0px, -20px); /* Safari */
-        transform: translate(0px -20px);
     }
 
     .pulse_4:hover {

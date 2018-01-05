@@ -376,14 +376,18 @@ h2 {
   flex-direction: column;
   background: url("../img/home_background_2.png") center;
   background-repeat: no-repeat;
-  background-color: rgba(43, 62, 92, 0.938);
+  background-color: #2b3e5c;
   background-size: cover; }
   .hero .name_first {
-    letter-spacing: 8px; }
+    letter-spacing: 8px;
+    font-weight: 900; }
   .hero .name_last {
-    letter-spacing: 8px; }
+    letter-spacing: 8px;
+    font-weight: 900; }
   .hero .name_space {
     background-color: none; }
+  .hero .letter_v {
+    color: rgba(132, 157, 198, 0.8); }
   .hero .apostrophe {
     display: inline-block;
     -moz-animation: rot 6s infinite ease;
@@ -483,9 +487,7 @@ h2 {
     -o-animation: pulse 3s infinite ease;
     -webkit-animation: pulse 3s infinite ease;
     animation: pulse 3s infinite ease;
-    animation-delay: 4s;
-    -moz-transition: all 1s ease;
-    transition: all 1s ease; }
+    animation-delay: 4s; }
   .hero .pulse_5 {
     display: inline-block;
     -moz-animation: pulse 3s infinite ease;
@@ -532,32 +534,17 @@ h2 {
     color: #FFFFFF;
     -webkit-transform: rotateZ(180deg);
     -moz-transform: rotateZ(180deg);
-    transform: rotateZ(180deg);
-    -ms-transform: translate(0px, -20px);
-    /* IE 9 */
-    -webkit-transform: translate(0px, -20px);
-    /* Safari */
-    transform: translate(0px -20px); }
+    transform: rotateZ(180deg); }
   .hero .pulse_2:hover {
     color: #FFFFFF;
     -webkit-transform: rotateZ(180deg);
     -moz-transform: rotateZ(180deg);
-    transform: rotateZ(180deg);
-    -ms-transform: translate(0px, -20px);
-    /* IE 9 */
-    -webkit-transform: translate(0px, -20px);
-    /* Safari */
-    transform: translate(0px -20px); }
+    transform: rotateZ(180deg); }
   .hero .pulse_3:hover {
     color: #FFFFFF;
     -webkit-transform: rotateZ(180deg);
     -moz-transform: rotateZ(180deg);
-    transform: rotateZ(180deg);
-    -ms-transform: translate(0px, -20px);
-    /* IE 9 */
-    -webkit-transform: translate(0px, -20px);
-    /* Safari */
-    transform: translate(0px -20px); }
+    transform: rotateZ(180deg); }
   .hero .pulse_4:hover {
     color: #FFFFFF;
     -webkit-transform: rotateZ(90deg);
