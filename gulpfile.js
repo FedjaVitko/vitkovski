@@ -39,15 +39,20 @@ gulp.task('html', function(){
         .pipe(gulp.dest('./dist/'));
 });
 
-gulp.task('css-dist', function () {
+gulp.task('sass-dist', function () {
     return gulp.src('app/scss/**/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('dist/css'))
 });
 
+gulp.task('css-dist', function () {
+    return gulp.src('app/css/**/normalize.css')
+        .pipe(gulp.dest('dist/css'))
+});
+
 gulp.task('js-dist', function () {
-    return gulp.src('app/js/index.js')
-        .pipe(gulp.dest('./dist/'))
+    return gulp.src('app/js/**/*.*')
+        .pipe(gulp.dest('./dist/js'))
 })
 
 // minify images
@@ -56,7 +61,7 @@ gulp.task('images', function(){
         .pipe(gulp.dest('dist/img'));
 });
 
-gulp.task('build', ['html', 'css-dist', 'js-dist', 'images']);
+gulp.task('build', ['html', 'sass-dist', 'css-dist', 'js-dist', 'images']);
 
 // default will also watch
 gulp.task('default', ['watch']);
