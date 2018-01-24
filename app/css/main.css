@@ -1,7 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,900");
-@import url("https://fonts.googleapis.com/css?family=Lato");
-@import url("https://fonts.googleapis.com/css?family=Space+Mono:400,700i");
-@import url("https://fonts.googleapis.com/css?family=Electrolize");
+@import url("https://fonts.googleapis.com/css?family=Space+Mono:100,400,700i");
+@import url("https://fonts.googleapis.com/css?family=Raleway:100,200,400,500");
 @import url("https://fonts.googleapis.com/css?family=Merienda");
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -349,12 +347,14 @@ body {
 img {
   max-width: 100%; }
 
-h1, h2, p {
+h1,
+h2,
+p {
   margin-top: 0;
   margin-bottom: 1em; }
 
 h1 {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(250, 250, 250, 0.8);
   line-height: 1;
   letter-spacing: 3px;
   font-size: 4.325rem;
@@ -365,11 +365,19 @@ h2 {
   letter-spacing: 0.15em;
   color: #a0afaf;
   line-height: 1;
-  font-family: "Space Mono", monospace;
+  font-family: "Raleway", sans-serif;
   font-weight: 400; }
 
-.hero {
-  height: 100vh;
+h3 {
+  font-size: 1.8rem;
+  letter-spacing: 0.15em;
+  color: #fafafa;
+  line-height: 1;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400; }
+
+.home {
+  height: calc(100vh + 70px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -378,17 +386,17 @@ h2 {
   background-repeat: no-repeat;
   background-color: #2b3e5c;
   background-size: cover; }
-  .hero .name_first {
+  .home .name_first {
     letter-spacing: 8px;
     font-weight: 900; }
-  .hero .name_last {
+  .home .name_last {
     letter-spacing: 8px;
     font-weight: 900; }
-  .hero .name_space {
+  .home .name_space {
     background-color: none; }
-  .hero .letter_v {
+  .home .letter_v {
     color: rgba(132, 157, 198, 0.8); }
-  .hero .apostrophe {
+  .home .apostrophe {
     display: inline-block;
     -moz-animation: rot 6s infinite ease;
     -o-animation: rot 6s infinite ease;
@@ -426,13 +434,13 @@ h2 {
     opacity: 1; } }
 
 @-ms-keyframes rot {
-  .hero .apostrophe 0% {
+  .home .apostrophe 0% {
     opacity: 1; }
-  .hero .apostrophe 25% {
+  .home .apostrophe 25% {
     transform: rotateZ(-30deg); }
-  .hero .apostrophe 75% {
+  .home .apostrophe 75% {
     transform: rotateZ(30deg); }
-  .hero .apostrophe 100% {
+  .home .apostrophe 100% {
     opacity: 1; } }
 
 @keyframes rot {
@@ -444,155 +452,155 @@ h2 {
     transform: rotateZ(30deg); }
   100% {
     opacity: 1; } }
-  .hero .apostrophe:hover {
+  .home .apostrophe:hover {
     -webkit-transform: rotateZ(180deg);
     -moz-transform: rotateZ(180deg);
     transform: rotateZ(180deg); }
-  .hero p {
+  .home p {
     font-size: 27px;
     width: 60%;
     text-align: center;
-    color: rgba(255, 255, 255, 0.7); }
-    .hero p::before {
+    color: rgba(250, 250, 250, 0.7); }
+    .home p::before {
       display: block;
-      content: '';
+      content: "";
       width: 100%;
       opacity: 0.4;
       height: 1px;
       margin-bottom: 1.8em;
-      background: #FFFFFF; }
-  .hero .pulse_1 {
+      background: #fafafa; }
+  .home .pulse_1 {
     display: inline-block;
     -moz-animation: pulse 3s infinite ease;
     -o-animation: pulse 3s infinite ease;
     -webkit-animation: pulse 3s infinite ease;
     animation: pulse 3s infinite ease; }
-  .hero .pulse_2 {
+  .home .pulse_2 {
     display: inline-block;
     -moz-animation: pulse 3s infinite ease;
     -o-animation: pulse 3s infinite ease;
     -webkit-animation: pulse 3s infinite ease;
     animation: pulse 3s infinite ease;
     animation-delay: 2s; }
-  .hero .pulse_3 {
+  .home .pulse_3 {
     display: inline-block;
     -moz-animation: pulse 3s infinite ease;
     -o-animation: pulse 3s infinite ease;
     -webkit-animation: pulse 3s infinite ease;
     animation: pulse 3s infinite ease;
     animation-delay: 3s; }
-  .hero .pulse_4 {
+  .home .pulse_4 {
     display: inline-block;
     -moz-animation: pulse 3s infinite ease;
     -o-animation: pulse 3s infinite ease;
     -webkit-animation: pulse 3s infinite ease;
     animation: pulse 3s infinite ease;
     animation-delay: 4s; }
-  .hero .pulse_5 {
+  .home .pulse_5 {
     display: inline-block;
     -moz-animation: pulse 3s infinite ease;
     -o-animation: pulse 3s infinite ease;
     -webkit-animation: pulse 3s infinite ease;
     animation: pulse 3s infinite ease;
     animation-delay: 5s; }
-  .hero .pulse_6 {
+  .home .pulse_6 {
     display: inline-block;
     -moz-animation: pulse 3s infinite ease;
     -o-animation: pulse 3s infinite ease;
     -webkit-animation: pulse 3s infinite ease;
     animation: pulse 3s infinite ease;
     animation-delay: 6s; }
-  .hero .pulse_7 {
+  .home .pulse_7 {
     display: inline-block;
     -moz-animation: pulse 3s infinite ease;
     -o-animation: pulse 3s infinite ease;
     -webkit-animation: pulse 3s infinite ease;
     animation: pulse 3s infinite ease;
     animation-delay: 7s; }
-  .hero .pulse_8 {
+  .home .pulse_8 {
     display: inline-block;
     -moz-animation: pulse 3s infinite ease;
     -o-animation: pulse 3s infinite ease;
     -webkit-animation: pulse 3s infinite ease;
     animation: pulse 3s infinite ease;
     animation-delay: 8s; }
-  .hero .pulse_9 {
+  .home .pulse_9 {
     display: inline-block;
     -moz-animation: pulse 3s infinite ease;
     -o-animation: pulse 3s infinite ease;
     -webkit-animation: pulse 3s infinite ease;
     animation: pulse 3s infinite ease;
     animation-delay: 9s; }
-  .hero .pulse_10 {
+  .home .pulse_10 {
     display: inline-block;
     -moz-animation: pulse 3s infinite ease;
     -o-animation: pulse 3s infinite ease;
     -webkit-animation: pulse 3s infinite ease;
     animation: pulse 3s infinite ease;
     animation-delay: 10s; }
-  .hero .pulse_1:hover {
-    color: #FFFFFF;
+  .home .pulse_1:hover {
+    color: #fafafa;
     -webkit-transform: rotateZ(180deg);
     -moz-transform: rotateZ(180deg);
     transform: rotateZ(180deg); }
-  .hero .pulse_2:hover {
-    color: #FFFFFF;
+  .home .pulse_2:hover {
+    color: #fafafa;
     -webkit-transform: rotateZ(180deg);
     -moz-transform: rotateZ(180deg);
     transform: rotateZ(180deg); }
-  .hero .pulse_3:hover {
-    color: #FFFFFF;
+  .home .pulse_3:hover {
+    color: #fafafa;
     -webkit-transform: rotateZ(180deg);
     -moz-transform: rotateZ(180deg);
     transform: rotateZ(180deg); }
-  .hero .pulse_4:hover {
-    color: #FFFFFF;
+  .home .pulse_4:hover {
+    color: #fafafa;
     -webkit-transform: rotateZ(90deg);
     -moz-transform: rotateZ(90deg);
     transform: rotateZ(90deg); }
-  .hero .pulse_5:hover {
-    color: #FFFFFF;
+  .home .pulse_5:hover {
+    color: #fafafa;
     -webkit-transform: rotateZ(180deg);
     -moz-transform: rotateZ(180deg);
     transform: rotateZ(180deg); }
-  .hero .pulse_6:hover {
-    color: #FFFFFF;
+  .home .pulse_6:hover {
+    color: #fafafa;
     -webkit-transform: rotateZ(180deg);
     -moz-transform: rotateZ(180deg);
     transform: rotateZ(180deg); }
-  .hero .pulse_7:hover {
-    color: #FFFFFF;
+  .home .pulse_7:hover {
+    color: #fafafa;
     -webkit-transform: rotateZ(180deg);
     -moz-transform: rotateZ(180deg);
     transform: rotateZ(180deg); }
-  .hero .pulse_8:hover {
-    color: #FFFFFF;
+  .home .pulse_8:hover {
+    color: #fafafa;
     -webkit-transform: rotateZ(180deg);
     -moz-transform: rotateZ(180deg);
     transform: rotateZ(180deg); }
-  .hero .pulse_9:hover {
-    color: #FFFFFF;
+  .home .pulse_9:hover {
+    color: #fafafa;
     -webkit-transform: rotateZ(180deg);
     -moz-transform: rotateZ(180deg);
     transform: rotateZ(180deg); }
-  .hero .pulse_10:hover {
-    color: #FFFFFF;
+  .home .pulse_10:hover {
+    color: #fafafa;
     -webkit-transform: rotateZ(180deg);
     -moz-transform: rotateZ(180deg);
     transform: rotateZ(180deg); }
-  .hero a {
+  .home a {
     padding: 0.6em 1em;
     margin-top: 3em;
-    border: 1px solid rgba(255, 255, 255, 0.8);
-    color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(250, 250, 250, 0.8);
+    color: rgba(250, 250, 250, 0.8);
     cursor: pointer;
     font-size: 25px;
     transition: all 1s ease; }
-    .hero a .fa-arrow-right {
-      -webkit-transition: .7s ease-out;
-      -moz-transition: .7s ease-out;
-      transition: .7s ease-out; }
-    .hero a .pulse {
+    .home a .fa-arrow-right {
+      -webkit-transition: 0.5s ease-out;
+      -moz-transition: 0.5s ease-out;
+      transition: 0.5s ease-out; }
+    .home a .pulse {
       display: inline-block;
       -moz-animation: pulse 3s infinite ease;
       -o-animation: pulse 3s infinite ease;
@@ -627,12 +635,12 @@ h2 {
     opacity: 1; } }
 
 @-ms-keyframes pulse {
-  .hero a 0% {
+  .home a 0% {
     opacity: 1; }
-  .hero a 50% {
+  .home a 50% {
     opacity: 0.6;
     color: #849dc6; }
-  .hero a 100% {
+  .home a 100% {
     opacity: 1; } }
 
 @keyframes pulse {
@@ -643,11 +651,232 @@ h2 {
     color: #849dc6; }
   100% {
     opacity: 1; } }
-  .hero a:hover {
-    background-color: rgba(93, 105, 253, 0.1);
+  .home a:hover {
+    background-color: rgba(20, 151, 147, 0.1);
     color: white; }
-    .hero a:hover .fa-arrow-right {
+    .home a:hover .fa-arrow-right {
       -webkit-transform: rotateZ(90deg);
       -moz-transform: rotateZ(90deg);
       transform: rotateZ(90deg);
       animation: none; }
+  .home section {
+    position: relative; }
+  .home .fixed {
+    position: fixed;
+    top: 0; }
+  .home .active {
+    color: #fafafa; }
+  .home nav {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom: 2px solid #849dc6;
+    width: 100%;
+    height: 60px;
+    z-index: 500; }
+  .home nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none; }
+    .home nav ul li a {
+      text-decoration: none;
+      padding: 0.6em 1em;
+      margin-top: 3em;
+      color: rgba(90, 107, 107, 0.8);
+      cursor: pointer;
+      font-size: 22px;
+      border: 0px solid red;
+      transition: all 0.5s ease; }
+    .home nav ul li a:hover {
+      background-color: rgba(132, 157, 198, 0);
+      color: #149793; }
+
+section {
+  position: relative; }
+
+.about {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: auto;
+  padding-top: 2em;
+  background-color: #2b3e5c;
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.184 20c.357-.13.72-.264 1.088-.402l1.768-.661C33.64 15.347 39.647 14 50 14c10.271 0 15.362 1.222 24.629 4.928.955.383 1.869.74 2.75 1.072h6.225c-2.51-.73-5.139-1.691-8.233-2.928C65.888 13.278 60.562 12 50 12c-10.626 0-16.855 1.397-26.66 5.063l-1.767.662c-2.475.923-4.66 1.674-6.724 2.275h6.335zm0-20C13.258 2.892 8.077 4 0 4V2c5.744 0 9.951-.574 14.85-2h6.334zM77.38 0C85.239 2.966 90.502 4 100 4V2c-6.842 0-11.386-.542-16.396-2h-6.225zM0 14c8.44 0 13.718-1.21 22.272-4.402l1.768-.661C33.64 5.347 39.647 4 50 4c10.271 0 15.362 1.222 24.629 4.928C84.112 12.722 89.438 14 100 14v-2c-10.271 0-15.362-1.222-24.629-4.928C65.888 3.278 60.562 2 50 2 39.374 2 33.145 3.397 23.34 7.063l-1.767.662C13.223 10.84 8.163 12 0 12v2z' fill='%23385179' fill-opacity='0.42' fill-rule='evenodd'/%3E%3C/svg%3E");
+  z-index: 3;
+  background-size: cover; }
+  .about .about-part {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .about .about-part h3 {
+      text-align: left;
+      margin: 0;
+      width: 50%;
+      letter-spacing: 0.5px;
+      line-height: 1.5em;
+      font-weight: 400;
+      font-family: "Raleway", sans-serif; }
+    .about .about-part h3:after {
+      width: 20%;
+      margin: 3em auto;
+      content: '';
+      display: block;
+      height: 1px;
+      background: #fafafa; }
+    .about .about-part img {
+      width: 350px;
+      height: 400px; }
+  .about #bars {
+    margin-top: 10em;
+    height: 200px;
+    width: 70%;
+    display: flex;
+    color: #fafafa; }
+  .about .bar-item {
+    width: 20%;
+    margin: 10px;
+    text-align: center; }
+  .about .bar-item p {
+    font-size: 1.8em; }
+  .about .bar-circle {
+    display: block;
+    width: 90px;
+    height: 90px;
+    margin: 2em auto; }
+
+.projects {
+  height: 100vh;
+  min-height: 1050px;
+  background-color: #2b3e5c;
+  background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23385179' fill-opacity='0.5'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  padding: 2vw 15vw;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 0 auto;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
+  .projects #filters {
+    margin: 4%;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    z-index: 10; }
+  .projects #filters li {
+    display: inline-block;
+    z-index: 10; }
+  .projects #filters li span {
+    display: block;
+    padding: 5px 20px;
+    border: 1px solid #fafafa;
+    font-size: 20px;
+    text-decoration: none;
+    color: #fafafa;
+    cursor: pointer; }
+  .projects #filters li span.active, .projects #filters li span:hover {
+    background: #fafafa;
+    color: #223843; }
+  .projects #portfoliolist .portfolio {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    width: 33%;
+    margin: 2px;
+    display: none;
+    float: left;
+    overflow: hidden; }
+  .projects .portfolio-wrapper {
+    overflow: hidden;
+    position: relative;
+    background: #223843;
+    cursor: pointer; }
+  .projects .portfolio img {
+    object-fit: cover;
+    width: 100%;
+    position: relative;
+    top: 0;
+    background-color: green;
+    -webkit-transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1); }
+  .projects .portfolio .label {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    bottom: -60px;
+    -webkit-transition: all 200ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 200ms cubic-bezier(0.645, 0.045, 0.355, 1); }
+  .projects .portfolio .label-bg {
+    background: #223843;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .projects .portfolio .label-text {
+    color: #fff;
+    position: relative;
+    padding: 0;
+    font-size: 20px; }
+  .projects .portfolio .text-category {
+    display: block;
+    font-size: 14px; }
+  .projects .portfolio:hover .label {
+    bottom: 0; }
+  .projects .portfolio:hover img {
+    top: -60px;
+    opacity: 0.3 !important;
+    filter: alpha(opacity=70) !important;
+    /* For IE8 and earlier */ }
+
+.blog {
+  height: 100vh;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #2b3e5c;
+  background-size: cover; }
+
+.contact {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #2b3e5c;
+  background-size: cover; }
+
+.footer {
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 3;
+  background-color: #2b3e5c;
+  background-size: cover; }
+  .footer p {
+    color: #77818d;
+    font-size: 23px; }
+  .footer .icon-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em; }
+  .footer a {
+    width: 45px;
+    height: 45px;
+    padding: 0.2em;
+    margin: 0 1em; }
+  .footer svg {
+    fill: #849dc6; }
+  .footer svg:hover {
+    fill: #fafafa; }

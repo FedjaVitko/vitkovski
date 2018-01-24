@@ -1,11 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,900');
-@import url('https://fonts.googleapis.com/css?family=Lato');
-@import url('https://fonts.googleapis.com/css?family=Space+Mono:400,700i');
-@import url('https://fonts.googleapis.com/css?family=Electrolize');
+@import url('https://fonts.googleapis.com/css?family=Space+Mono:100,400,700i');
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,200,400,500');
 @import url('https://fonts.googleapis.com/css?family=Merienda');
 
 $ff-ms: 'Space Mono', monospace;
-$ff-ss: 'Electrolize', sans-serif;
+$ff-ss: 'Raleway', sans-serif;
 $ff-cur: 'Merienda', cursive;
 
 $fw-n: 400;
@@ -16,7 +14,7 @@ $fw-b: 900;
     letter-spacing: $ls;
     color: $color;
     line-height: $lh;   
-    font-family: $ff-ms;
+    font-family: $ff-ss;
     font-weight: $fw;
 }
 

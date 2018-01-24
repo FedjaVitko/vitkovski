@@ -1,25 +1,31 @@
 body {
-    font-family: $ff-ms;
-    line-height: 1.6;
+  font-family: $ff-ms;
+  line-height: 1.6;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
-h1, h2, p {
-    margin-top: 0;
-    margin-bottom: 1em;
+h1,
+h2,
+p {
+  margin-top: 0;
+  margin-bottom: 1em;
 }
 
 h1 {
-    color: rgba($white, 0.8);
-    line-height: 1;
-    letter-spacing: 3px;
-    font-size: 4.325rem;
-    font-weight: 100;
+  color: rgba($white, 0.8);
+  line-height: 1;
+  letter-spacing: 3px;
+  font-size: 4.325rem;
+  font-weight: 100;
 }
 
 h2 {
-    @include sans-serif($fs: 2.8rem);
+  @include sans-serif($fs: 2.8rem);
+}
+
+h3 {
+  @include sans-serif($fs: 1.8rem, $color: $white);
 }

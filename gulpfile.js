@@ -1,8 +1,5 @@
 const gulp = require('gulp');
-const webpack = require('gulp-webpack');
 const imagemin = require('gulp-imagemin');
-
-const webpackConfig = require('./webpack.config.js');
 
 browserSync = require('browser-sync').create(),
 sass = require('gulp-sass');
@@ -30,7 +27,6 @@ gulp.task('sass', function() {
 
 gulp.task('js', function() {
     return gulp.src('app/js/index.js')
-        .pipe(webpack(webpackConfig))
         .pipe(gulp.dest('app/'))
         .pipe(browserSync.stream());
   });
@@ -51,7 +47,6 @@ gulp.task('css-dist', function () {
 
 gulp.task('js-dist', function () {
     return gulp.src('app/js/index.js')
-        .pipe(webpack(webpackConfig))
         .pipe(gulp.dest('./dist/'))
 })
 

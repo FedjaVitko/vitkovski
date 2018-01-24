@@ -1,0 +1,116 @@
+.projects {
+    height: 100vh;
+    min-height: 1050px;
+    background-color: #2b3e5c;
+background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23385179' fill-opacity='0.5'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    padding: 2vw 15vw;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 0 auto;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+       
+      #filters {
+          margin: 4%;
+          padding: 0;
+          list-style: none;
+          text-align: center;
+          z-index: 10;
+      }
+      
+          #filters li {
+            display: inline-block;
+            z-index: 10;
+          }
+          
+          #filters li span {
+              display: block;
+              padding:5px 20px;
+              border: 1px solid $white;
+              font-size: 20px;	
+              text-decoration:none;
+              color: $white;
+              cursor: pointer;
+          }
+
+          #filters li span.active, #filters li span:hover{
+              background: $white;
+              color: $dark-blue;
+          }
+       
+      
+       
+      #portfoliolist .portfolio {
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          -o-box-sizing: border-box;
+          width:33%;
+          margin:2px;
+          display:none;
+          float:left;
+          overflow:hidden;
+      }
+      
+          .portfolio-wrapper {
+              overflow:hidden;
+              position: relative;
+            //   max-height: 245.63px;
+              background: $dark-blue;
+              cursor:pointer;
+          }
+      
+          .portfolio img {
+              object-fit: cover;
+              width:100%;
+              position: relative;
+              top:0;
+              background-color: green;
+            -webkit-transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+            transition:         all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);		
+          }
+          
+          .portfolio .label {
+              position: absolute;
+              width: 100%;
+              height:60px;
+              bottom:-60px;
+          -webkit-transition: all 200ms cubic-bezier(0.645, 0.045, 0.355, 1);
+          transition:         all 200ms cubic-bezier(0.645, 0.045, 0.355, 1);
+          }
+      
+              .portfolio .label-bg {
+                  background: $dark-blue;
+                  width: 100%;
+                  height: 100%;
+                  position: absolute;
+                  top:0;
+                  left:0;
+              }
+          
+              .portfolio .label-text {
+                  color:#fff;
+                  position: relative;
+                  padding: 0;
+                  font-size: 20px;
+              }
+                  
+                  .portfolio .text-category {
+                      display:block;
+                      font-size:14px;
+                  }
+          
+        .portfolio:hover .label {
+          bottom:0;
+        }
+        .portfolio:hover img {
+          top:-60px;
+          opacity:0.3 !important;
+          filter:alpha(opacity=70) !important; /* For IE8 and earlier */
+        }  
+}
+

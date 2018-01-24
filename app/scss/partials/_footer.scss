@@ -1,0 +1,38 @@
+.footer {
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 3;
+    
+    background-color: rgba(43, 62, 92, 1);
+    background-size: cover;
+
+    p {
+        color: rgb(119, 129, 141);
+        font-size: 23px;
+    }
+
+    .icon-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1em;
+    }
+
+    a {
+        width: 45px;
+        height: 45px;
+        padding: 0.2em;
+        margin: 0 1em;
+    }
+
+    svg {
+        fill: $accent;
+    }
+
+    svg:hover {
+        fill: $white;
+    }
+}
