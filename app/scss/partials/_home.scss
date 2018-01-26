@@ -7,7 +7,7 @@
 
   background: url("../img/home_background_2.png") center;
   background-repeat: no-repeat;
-  background-color: rgba(43, 62, 92, 1);
+  background-color: rgba(43, 62, 92, 0.95);
   // background-color: rgba(36, 143, 155, 0.9);
   background-size: cover;
 
@@ -31,6 +31,10 @@
 
   .letter_v {
     color: rgba($accent, 0.8);
+  }
+
+  #work-btn {
+    text-decoration: none;
   }
 
   // .letter_f {
@@ -391,7 +395,7 @@
   }
 
   a:hover {
-    background-color: rgba($button, 0.1);
+    background-color: rgba(43, 62, 92, 0.93);
     // background: linear-gradient(to top left, rgba($button, 0.3), rgba($white, 0.3));
     color: white;
 
@@ -409,6 +413,7 @@
 
   .fixed {
     position: fixed;
+    background-color: rgba(43, 62, 92, 0.97);
     top: 0;
   }
 
@@ -444,8 +449,8 @@
       }
 
       a:hover {
-        background-color: rgba($accent, 0);
-        color: rgba($button, 1);
+        background-color: rgba($white, 0);
+        color: rgba($white, 1);
       }
     }
   }

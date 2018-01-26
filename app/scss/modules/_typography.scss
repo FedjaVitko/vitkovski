@@ -9,7 +9,7 @@ $ff-cur: 'Merienda', cursive;
 $fw-n: 400;
 $fw-b: 900;
 
-@mixin sans-serif($fs, $ls: .15em, $color: lighten($gray, 27), $lh: 1, $fw: $fw-n) {
+@mixin sans-serif($fs, $ls: .15em, $color: $white, $lh: 1, $fw: $fw-n) {
     font-size: $fs;
     letter-spacing: $ls;
     color: $color;
