@@ -1,0 +1,35 @@
+{
+    "name": "Vitkovski",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {},
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/TheoVitkovskiy/vitkovski/"
+    },
+    "author": "Fedor Vitkovskiy",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/TheoVitkovskiy/vitkovski/issues"
+    },
+    "homepage": "https://vitkovski.com",
+    "devDependencies": {
+      "babel-core": "^6.26.0",
+      "babel-loader": "^7.1.2",
+      "babel-preset-latest": "^6.24.1",
+      "browser-sync": "^2.18.13",
+      "gulp": "^3.9.1",
+      "gulp-sass": "^3.1.0",
+      "webpack": "^3.10.0",
+      "webpack-stream": "^4.0.0"
+    },
+    "dependencies": {
+      "gulp-imagemin": "^4.1.0",
+      "gulp-webpack": "^1.5.0",
+      "scrolltrigger-classes": "^0.3.6",
+      "smooth-scroll": "^12.1.5",
+      "velocity-animate": "^1.5.0",
+      "waypoints": "^4.0.1"
+    }
+  }
