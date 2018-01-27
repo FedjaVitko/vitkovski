@@ -1,9 +1,34 @@
+#smove_popup div {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+    min-height: 700px;
+    width: 60vw;
+    min-width: 900px;
+    color: $dark-blue;
+    background-color: $white;
+    
+    h1 {
+        color: $dark-blue;
+    }
+}
+.smove_popup_close {
+    background-color: rgba($white, 0);
+    border: none;
+    outline: 0;
+}
+
+#smove_popup {
+    transform: scale(0.8);
+  }
+
 .projects {
-    height: 100vh;
-    min-height: 1050px;
     background-color: #2b3e5c;
 background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23385179' fill-opacity='0.5'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-    padding: 2vw 15vw;
+    padding: 3vw 15vw;
     background-size: cover;
     text-align: center;
     display: flex;
@@ -16,7 +41,6 @@ background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox=
     transition: all 1s ease;
        
       #filters {
-          margin: 4%;
           padding: 0;
           list-style: none;
           text-align: center;
@@ -44,9 +68,8 @@ background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox=
           }
        
     #portfoliolist {
-        height: 800px;
+        margin-bottom: 3em;
     }
-      
        
       #portfoliolist .portfolio {
           -webkit-box-sizing: border-box;
@@ -86,28 +109,28 @@ background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox=
           transition:         all 200ms cubic-bezier(0.645, 0.045, 0.355, 1);
           }
       
-              .portfolio .label-bg {
-                  background: $dark-blue;
-                  width: 100%;
-                  height: 100%;
-                  position: absolute;
-                  top:0;
-                  left:0;
-              }
-          
-              .portfolio .label-text {
-                  color:#fff;
-                  position: relative;
-                  padding: 0;
-                  z-index: 100;
-                  font-size: 20px;
-              }
+            .portfolio .label-bg {
+                background: rgba($dark-blue, 0.5);
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top:0;
+                left:0;
+            }
+        
+            .portfolio .label-text {
+                color:#fff;
+                position: relative;
+                padding: 0;
+                z-index: 100;
+                font-size: 20px;
+            }
                   
-                  .portfolio .text-category {
-                      display:block;
-                      font-size:14px;
-                  }
-          
+            .portfolio .text-category {
+                display:block;
+                font-size:14px;
+            }
+    
         .portfolio:hover .label {
           bottom:0;
         }
@@ -116,5 +139,57 @@ background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox=
           opacity:0.3 !important;
           filter:alpha(opacity=70) !important; /* For IE8 and earlier */
         }  
+
+
+}
+
+@media screen and (max-width: 1738px) {
+    .projects {
+        padding: 3vw 10vw;
+    }
+}
+
+@media screen and (max-width: 1498px) {
+    .projects {
+        padding: 3vw 4vw;
+    }
+}
+
+@media screen and (max-width: 1370px) {
+    .projects {
+        #portfoliolist .portfolio {
+            width:49%;
+        }
+        .portfolio-wrapper {
+            max-height: 345.63px;
+        } 
+    }
+}
+
+@media screen and (max-width: 434px){
+    .projects {
+        #portfoliolist .portfolio {
+            width: 100%;
+        }
+        .portfolio-wrapper {
+            max-height: 245.63px;
+        } 
+    }
+}
+
+@media screen and (max-width: 330px){
+    .projects {
+        #filters {
+            padding: 0;
+            list-style: none;
+            text-align: center;
+            z-index: 10;
+        }
+
+        #filters li {
+            display: block;
+            z-index: 10;
+        }
+    }
 }
 

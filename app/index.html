@@ -15,7 +15,7 @@
 <body>
   
   <section class="home" id="home">
-    <h1>HELLO I<span class="apostrophe">'</span>M<span class="name_first">
+    <h1>HELLO, I<span class="apostrophe">'</span>M<span class="name_first">
       <span class="letter_f">F</span>EDOR</span>
       <span class="name_last">
         <span class="letter_v">V</span>ITKO<span class="letter_v">V</span>SKI</span>
@@ -40,9 +40,6 @@
         </li>
         <li>
           <a id="tocontact" href="#contact" class="mainnav">contact</a>
-        </li>
-        <li>
-          <a href="impressum.html" target='_blank'>impressum</a>
         </li>
       </ul>
     </nav>
@@ -190,13 +187,11 @@
       </div>
 
       <div id="smove_popup">
-        <h1>Smove</h1>
-        <div class="smove_carousel">
-          <div>your content</div>
-          <div>your content</div>
-          <div>your content</div>
+        <div>
+          <h1>Smove</h1>
+          <p>Smove is a mobile app that helps your navigation</p>
+          <button class="smove_popup_close"><img src="img/close.png"></img></button>
         </div>
-        <button class="smove_popup_close"></button>
       </div>
   </section>
   
@@ -207,12 +202,13 @@
   <section class="contact" id="contact">
     <!-- <h3>Have a question or want to work together?</h3> -->
     <h1>Contact</h1>
-    <div id="contact-form">
-      <input placeholder="Name" type="text" name="name"></input>
-      <input placeholder="Your E-Mail" type="email" name="email"></input>
-      <textarea placeholder="Your Message" type="text" name="message"></textarea>
+    <form id="contact-form">
+      <input placeholder="Name" id="name" type="text" name="name"></input>
+      <input placeholder="Your E-Mail" id="email" type="email" name="email"></input>
+      <textarea placeholder="Your Message" id="message" type="text" name="message"></textarea>
+      <div id="msg-success" class="msg-success">Your message was sent successfully, Thanks!</div>
       <input type="submit" id="submit" value="SUBMIT" />
-    </div>
+    </form>
     <a id="work-btn" href="#home">
         <svg enable-background="new 0 0 26 26" height="50px" id="Layer_1" version="1.1" viewBox="0 0 26 26" width="50px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><polygon fill="rgb(240, 240, 255)" points="0.046,24.418 2.13,26.502 12.967,15.666 23.803,26.502 25.887,24.418 12.967,11.498  "/><polygon fill="rgb(240, 240, 255)" points="0.046,13.418 2.13,15.502 12.967,4.666 23.803,15.502 25.887,13.418 12.967,0.498  "/></g></svg>
       </a>
@@ -230,7 +226,7 @@
           <svg aria-labelledby="simpleicons-medium-icon" role="img"  viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title id="simpleicons-medium-icon">Medium icon</title><path d="M2.846 6.36c.03-.295-.083-.586-.303-.784l-2.24-2.7v-.403H7.26l5.378 11.795 4.728-11.795H24v.403l-1.917 1.837c-.165.126-.247.333-.213.538v13.5c-.034.204.048.41.213.537l1.87 1.837v.403h-9.41v-.403l1.937-1.882c.19-.19.19-.246.19-.538V7.794l-5.39 13.688h-.727L4.278 7.794v9.174c-.052.386.076.774.347 1.053l2.52 3.06v.402H0v-.403l2.52-3.06c.27-.278.39-.67.326-1.052V6.36z"/></svg>
       </a>
     </div>
-    <p>FEDOR VITKOVSKIY <sh3an>&copy;</span>2017</p>
+    <p>FEDOR VITKOVSKIY <span>&copy;</span>2017 |<a href="impressum.html" target='_blank'>Impressum</a></p>
   </section>
 
 </body>

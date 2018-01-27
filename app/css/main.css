@@ -699,6 +699,51 @@ h3 {
 section {
   position: relative; }
 
+@media screen and (max-width: 1360px) {
+  h1 {
+    font-size: 3.325rem; }
+  h2 {
+    font-size: 2.925rem; } }
+
+@media screen and (max-width: 1100px) {
+  h1 {
+    font-size: 2.925rem; }
+  h2 {
+    font-size: 1.925rem; }
+  .home a {
+    font-size: 20px; } }
+
+@media screen and (max-width: 990px) {
+  h1 {
+    font-size: 2.525rem; }
+  h2 {
+    font-size: 1.725rem; }
+  .home a {
+    font-size: 18px; } }
+
+@media screen and (max-width: 890px) {
+  h1 {
+    font-size: 2.125rem; }
+  h2 {
+    font-size: 1.325rem; }
+  .home a {
+    font-size: 18px; } }
+
+@media screen and (max-width: 890px) {
+  h1 {
+    font-size: 1.725rem; }
+  h2 {
+    font-size: 1rem; }
+  .home a {
+    font-size: 16px; } }
+
+@media screen and (max-width: 620px) {
+  h1 {
+    text-align: center;
+    line-height: 1.4em; }
+  nav {
+    display: none; } }
+
 .about {
   height: 100vh;
   display: flex;
@@ -753,12 +798,33 @@ section {
     height: 90px;
     margin: 2em auto; }
 
+#smove_popup div {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 80vh;
+  min-height: 700px;
+  width: 60vw;
+  min-width: 900px;
+  color: #223843;
+  background-color: #f0f0ff; }
+  #smove_popup div h1 {
+    color: #223843; }
+
+.smove_popup_close {
+  background-color: rgba(240, 240, 255, 0);
+  border: none;
+  outline: 0; }
+
+#smove_popup {
+  transform: scale(0.8); }
+
 .projects {
-  height: 100vh;
-  min-height: 1050px;
   background-color: #2b3e5c;
   background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23385179' fill-opacity='0.5'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  padding: 2vw 15vw;
+  padding: 3vw 15vw;
   background-size: cover;
   text-align: center;
   display: flex;
@@ -770,7 +836,6 @@ section {
   -o-transition: all 1s ease;
   transition: all 1s ease; }
   .projects #filters {
-    margin: 4%;
     padding: 0;
     list-style: none;
     text-align: center;
@@ -790,7 +855,7 @@ section {
     background: #f0f0ff;
     color: #223843; }
   .projects #portfoliolist {
-    height: 800px; }
+    margin-bottom: 3em; }
   .projects #portfoliolist .portfolio {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -822,7 +887,7 @@ section {
     -webkit-transition: all 200ms cubic-bezier(0.645, 0.045, 0.355, 1);
     transition: all 200ms cubic-bezier(0.645, 0.045, 0.355, 1); }
   .projects .portfolio .label-bg {
-    background: #223843;
+    background: rgba(34, 56, 67, 0.5);
     width: 100%;
     height: 100%;
     position: absolute;
@@ -844,6 +909,36 @@ section {
     opacity: 0.3 !important;
     filter: alpha(opacity=70) !important;
     /* For IE8 and earlier */ }
+
+@media screen and (max-width: 1738px) {
+  .projects {
+    padding: 3vw 10vw; } }
+
+@media screen and (max-width: 1498px) {
+  .projects {
+    padding: 3vw 4vw; } }
+
+@media screen and (max-width: 1370px) {
+  .projects #portfoliolist .portfolio {
+    width: 49%; }
+  .projects .portfolio-wrapper {
+    max-height: 345.63px; } }
+
+@media screen and (max-width: 434px) {
+  .projects #portfoliolist .portfolio {
+    width: 100%; }
+  .projects .portfolio-wrapper {
+    max-height: 245.63px; } }
+
+@media screen and (max-width: 330px) {
+  .projects #filters {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    z-index: 10; }
+  .projects #filters li {
+    display: block;
+    z-index: 10; } }
 
 .blog {
   height: 100vh;
@@ -867,6 +962,10 @@ section {
     text-align: center; }
   .contact svg:hover {
     cursor: pointer; }
+  .contact #msg-success {
+    margin-bottom: 1em; }
+  .contact .msg-success {
+    display: none; }
   .contact #contact-form {
     display: flex;
     align-items: center;
@@ -890,6 +989,9 @@ section {
       width: 150px;
       padding: 2px;
       box-sizing: content-box; }
+    .contact #contact-form input[type="submit"]:hover {
+      background-color: #f0f0ff;
+      color: #223843; }
     .contact #contact-form ::placeholder {
       /* Chrome, Firefox, Opera, Safari 10.1+ */
       color: #f0f0ff;
@@ -924,10 +1026,14 @@ section {
     align-items: center;
     margin-bottom: 1em; }
   .footer a {
+    text-decoration: none;
+    color: #77818d;
     width: 45px;
     height: 45px;
     padding: 0.2em;
     margin: 0 1em; }
+  .footer a:hover {
+    color: #f0f0ff; }
   .footer svg {
     fill: #849dc6; }
   .footer svg:hover {

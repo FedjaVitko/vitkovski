@@ -22,10 +22,16 @@
     }
 
     a {
+        text-decoration: none;
+        color: rgb(119, 129, 141);
         width: 45px;
         height: 45px;
         padding: 0.2em;
         margin: 0 1em;
+    }
+
+    a:hover {
+        color: $white;
     }
 
     svg {

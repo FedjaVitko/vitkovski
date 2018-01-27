@@ -463,3 +463,89 @@
 section {
   position: relative;
 }
+
+@media screen and (max-width: 1360px) {
+  h1 {
+    font-size: 3.325rem;
+  }
+  h2 {
+    font-size: 2.925rem;
+  }
+}
+
+@media screen and (max-width: 1100px){
+  h1 {
+    font-size: 2.925rem;
+  }
+
+  h2 {
+    font-size: 1.925rem;
+  }
+
+  .home {
+    a {
+      font-size: 20px;
+    }
+  }
+
+}
+
+@media screen and (max-width: 990px){
+  h1 {
+    font-size: 2.525rem;
+  }
+
+  h2 {
+    font-size: 1.725rem;
+  }
+
+  .home {
+    a {
+      font-size: 18px;
+    }
+  }
+}
+
+@media screen and (max-width: 890px){
+  h1 {
+    font-size: 2.125rem;
+  }
+
+  h2 {
+    font-size: 1.325rem;
+  }
+
+  .home {
+    a {
+      font-size: 18px;
+    }
+  }
+}
+
+@media screen and (max-width: 890px){
+  h1 {
+    font-size: 1.725rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  .home {
+    a {
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 620px){
+
+  h1 {
+    text-align: center;
+    line-height: 1.4em;
+  }
+  nav {
+    display: none;
+  }
+}
+
