@@ -1,8 +1,8 @@
 {
     "name": "Vitkovski",
     "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
+    "description": "My Portfolio Page",
+    "main": "js/index.js",
     "scripts": {},
     "repository": {
       "type": "git",
