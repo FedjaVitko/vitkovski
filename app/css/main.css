@@ -950,7 +950,6 @@ section {
   background-size: cover; }
 
 .contact {
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -975,7 +974,7 @@ section {
     margin-bottom: 8em;
     color: #f0f0ff; }
     .contact #contact-form input {
-      margin-bottom: 1em;
+      margin-bottom: 0.5em;
       border: none;
       height: 40px;
       padding-left: 1em;
@@ -1008,13 +1007,32 @@ section {
       background-color: rgba(34, 56, 67, 0.5);
       color: #f0f0ff; }
 
+@media screen and (max-width: 580px) {
+  .contact #contact-form {
+    margin-top: 2em;
+    margin-bottom: 8em; }
+    .contact #contact-form input {
+      margin-bottom: 0.2em;
+      width: 85vw;
+      background-color: rgba(34, 56, 67, 0.5);
+      color: #f0f0ff; }
+    .contact #contact-form textarea {
+      font-size: 20px;
+      width: 85vw; }
+    .contact #contact-form input[type="submit"] {
+      background-color: rgba(34, 56, 67, 0.5);
+      color: #f0f0ff;
+      width: 150px;
+      padding: 2px;
+      box-sizing: content-box; } }
+
 .footer {
-  height: 20vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   z-index: 3;
+  padding-top: 2em;
   background-color: #2b3e5c;
   background-size: cover; }
   .footer p {
