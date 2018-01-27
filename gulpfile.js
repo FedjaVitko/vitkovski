@@ -25,14 +25,7 @@ gulp.task('sass', function() {
         .pipe(browserSync.stream());
 });
 
-gulp.task('js', function() {
-    return gulp.src('app/js/index.js')
-        .pipe(gulp.dest('app/'))
-        .pipe(browserSync.stream());
-  });
-
-  
-  // DIST
+// DIST
   
 gulp.task('html', function(){
     gulp.src('app/*.html')
