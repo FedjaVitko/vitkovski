@@ -139,7 +139,7 @@ function onScroll(event) {
         }
     }
 
-    $('nav a').each(function () {
+    $('.mainnav').each(function () {
         var currentLink = $(this);
         var refElement = $(currentLink.attr("href"));
         if (refElement.offset().top <= scrollPosition && refElement.offset().top + refElement.height() > scrollPosition) {

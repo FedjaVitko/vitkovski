@@ -37,6 +37,10 @@
     text-decoration: none;
   }
 
+  a {
+    outline: 0;
+ }
+
   // .letter_f {
   //     color: red;
   // }
@@ -425,7 +429,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    border-bottom: 2px solid rgba($accent, 1);
+    border-bottom: 1px solid rgba($accent, 1);
     width: 100%;
     height: 60px;
     z-index: 500;
