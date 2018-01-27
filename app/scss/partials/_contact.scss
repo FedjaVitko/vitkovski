@@ -4,7 +4,6 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-top: 10em;
     
     background-color: #2b3e5c;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='112' height='92' viewBox='0 0 112 92'%3E%3Cg fill='%2332476a' fill-opacity='0.35'%3E%3Cpath fill-rule='evenodd' d='M72 10H40L16 20H0v8h16l24-14h32l24 14h16v-8H96L72 10zm0-8H40L16 4H0v8h16l24-6h32l24 6h16V4H96L72 2zm0 84H40l-24-6H0v8h16l24 2h32l24-2h16v-8H96l-24 6zm0-8H40L16 64H0v8h16l24 10h32l24-10h16v-8H96L72 78zm0-12H40L16 56H0v4h16l24 14h32l24-14h16v-4H96L72 66zm0-16H40l-24-2H0v4h16l24 6h32l24-6h16v-4H96l-24 2zm0-16H40l-24 6H0v4h16l24-2h32l24 2h16v-4H96l-24-6zm0-16H40L16 32H0v4h16l24-10h32l24 10h16v-4H96L72 18z'/%3E%3C/g%3E%3C/svg%3E");
@@ -15,29 +14,52 @@
         text-align: center;
     }
 
+    svg:hover {
+        cursor: pointer;
+    }
+
     #contact-form {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         margin-top: 2em;
+        margin-bottom: 8em;
         color: $white;
 
         input {
             margin-bottom: 1em;
             border: none;
-            height: 30px;
+            height: 40px;
+            padding-left: 1em;
+            font-size: 20px;
             width: 500px;
-            background-color: #2b3e5c;
+            background-color: rgba($dark-blue, 0.5);
             color: $white;
         }
 
+        input[type="submit"] {
+            background-color: rgba($dark-blue, 0.5);
+            color: $white;
+            width: 150px;
+            padding: 2px;
+            box-sizing: content-box;
+        }
+
+        ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: $white;
+            opacity: 0.8; /* Firefox */
+        }
+
         textarea {
-            margin-bottom: 3em;
+            margin-bottom: 2em;
             border: none;
             height: 200px;
+            padding-left: 1em;
+            padding-top: 1em;
+            font-size: 20px;
             width: 500px;
-            background-color: #2b3e5c;
+            background-color: rgba($dark-blue, 0.5);
             color: $white;
         }
     }
