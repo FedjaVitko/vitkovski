@@ -25,6 +25,12 @@ gulp.task('sass', function() {
         .pipe(browserSync.stream());
 });
 
+gulp.task('js', function() {
+    gulp.src('app/js/**/*.js')
+        .pipe(gulp.dest('app'))
+        .pipe(browserSync.stream());
+})
+
 // DIST
   
 gulp.task('html', function(){

@@ -492,7 +492,7 @@ section {
 
 @media screen and (max-width: 990px){
   h1 {
-    font-size: 2.525rem;
+    font-size: 2.725rem;
   }
 
   h2 {
@@ -512,23 +512,7 @@ section {
   }
 
   h2 {
-    font-size: 1.325rem;
-  }
-
-  .home {
-    a {
-      font-size: 18px;
-    }
-  }
-}
-
-@media screen and (max-width: 890px){
-  h1 {
-    font-size: 1.725rem;
-  }
-
-  h2 {
-    font-size: 1rem;
+    font-size: 1.425rem;
   }
 
   .home {
@@ -538,14 +522,44 @@ section {
   }
 }
 
-@media screen and (max-width: 620px){
+@media screen and (max-width: 680px){
+
+  h1 {
+    font-size: 1.925rem;
+  }
+  nav {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 630px){
 
   h1 {
     text-align: center;
     line-height: 1.4em;
   }
+  .home {
+    height: 100vh;
+  }
   nav {
     display: none;
+  }
+}
+
+@media screen and (max-width: 340px){
+  h1 {
+    font-size: 1.425rem;
+  }
+
+  h2 {
+    font-size: 1.025rem;
+  }
+
+  .home {
+    a {
+      font-size: 16px;
+    }
   }
 }
 

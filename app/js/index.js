@@ -3,7 +3,7 @@ $(document).ready(function () {
 
     // $('.button').on('click', onFilter);
 
-    var $work_btn = $('#work-btn');
+    var $work_btn = $('.pulse_1');
 
     $work_btn.waypoint((direction) => {
        if (direction == 'down') {
@@ -54,6 +54,26 @@ $(document).ready(function () {
                     width:      3,
                     number:   	60 / 10 * 10,
                     text:       '%',
+            colors:     ['rgba(43, 62, 92, 1)', 'white'],
+            duration: 800
+        });
+        Circles.create({
+            id:         'bar-4-second',
+            percentage: 90,
+            radius:     60,
+            width:      3,
+            number:     90 / 10 * 10,
+            text:       '%',
+            colors:     ['rgba(43, 62, 92, 1)', 'white'],
+            duration: 800
+        });
+        Circles.create({
+            id:         'bar-5-second',
+            percentage: 60,
+            radius:     60,
+            width:      3,
+            number:   	60 / 10 * 10,
+            text:       '%',
             colors:     ['rgba(43, 62, 92, 1)', 'white'],
             duration: 800
         }); 
