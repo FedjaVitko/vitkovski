@@ -82,9 +82,16 @@ $(document).ready(function () {
        }
     })
 
+    $('#smove_carousel').slick({});
+
 
     $('#smove_popup').popup({
-        transition: 'all 0.3s'
+        transition: 'all 0.3s',
+        scrolllock: true,
+        onopen: function() {
+            $('#smove_carousel').css('display', 'block'); 
+            $('#smove_carousel').get(0).slick.setPosition()
+        }
     });
     // Add active class
     $('ul .button').click(function(){

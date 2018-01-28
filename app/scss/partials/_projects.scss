@@ -1,19 +1,13 @@
-#smove_popup div {
+#smove_popup > div {
     display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+    align-content: space-between;
     flex-direction: column;
-    height: 80vh;
+    height: 100%;
     min-height: 700px;
-    width: 60vw;
-    min-width: 900px;
-    color: $dark-blue;
-    background-color: $white;
-    
-    h1 {
-        color: $dark-blue;
-    }
+    min-width: 90vw;
+    color: $white;
+    background-color: $dark-blue;
+    text-align: center;
 }
 .smove_popup_close {
     background-color: rgba($white, 0);
@@ -23,7 +17,50 @@
 
 #smove_popup {
     transform: scale(0.8);
+    #smove_carousel {
+        display: none;
+    }
+    
   }
+
+.content_wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.popup_text,
+.popup_links {
+    margin-top: 2em;
+    margin-left: 1em;
+    width: 50%;
+
+    p {
+        font-family: $ff-ss;
+        font-size: 20px;
+        width: 98%;
+        border-top: 1px solid $white;
+        padding-top: 1em;
+        padding-bottom: 2em;
+        text-align: center;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:link, a:visited, a:active {
+        color: $accent;
+    }
+
+    a:hover {
+        color: $white;
+    }
+}
+
+.popup_text > div,
+.popup_links > div {
+    height: 250px;
+}
 
 .projects {
     background-color: #2b3e5c;
@@ -89,6 +126,13 @@ background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox=
               background: $dark-blue;
               cursor:pointer;
           }
+
+          .portfolio a {
+              z-index: 1000;
+              color: $accent;
+              height: 50px;
+              width: 50px;
+          }
       
           .portfolio img {
               object-fit: cover;
@@ -153,6 +197,9 @@ background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox=
     .projects {
         padding: 3vw 4vw;
     }
+    h2 {
+        font-size: 2rem;
+    }
 }
 
 @media screen and (max-width: 1370px) {
@@ -166,6 +213,49 @@ background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox=
     }
 }
 
+
+@media screen and (max-width: 1040px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 816px) {
+    h2 {
+        font-size: 1.3rem;
+    }
+    .popup_text,
+    .popup_links {
+        p {
+            font-size: 15px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 732px) {
+    .content_wrapper {
+        flex-direction: column;
+    }
+
+    .popup_text,
+    .popup_links {
+        margin-top: 2em;
+        margin-left: 0em;
+        width: 100%;
+
+        p {
+            width: 100%;
+        }
+    }
+
+    .popup_text > div,
+    .popup_links > div {
+        height: 150px;
+    }
+}
+
+
 @media screen and (max-width: 434px){
     .projects {
         #portfoliolist .portfolio {
@@ -174,6 +264,18 @@ background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox=
         .portfolio-wrapper {
             max-height: 245.63px;
         } 
+    }
+}
+
+@media screen and (max-width: 365px){
+    h2 {
+        font-size: 1rem;
+    }
+    .popup_text,
+    .popup_links {
+        p {
+            font-size: 13px;
+        }
     }
 }
 

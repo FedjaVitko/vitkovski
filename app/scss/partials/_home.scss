@@ -11,6 +11,11 @@
   // background-color: rgba(36, 143, 155, 0.9);
   background-size: cover;
 
+  h1 {
+    font-family: $ff-ms;
+    margin-bottom: 1em;
+  }
+
   .name_first {
     letter-spacing: 8px;
 
