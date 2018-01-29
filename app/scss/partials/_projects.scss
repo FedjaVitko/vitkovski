@@ -1,4 +1,4 @@
-#smove_popup > div {
+#smove_popup > div, #chor_popup > div {
     display: flex;
     align-content: space-between;
     flex-direction: column;
@@ -15,11 +15,8 @@
     outline: 0;
 }
 
-#smove_popup {
+#smove_popup, #chor_popup {
     transform: scale(0.8);
-    #smove_carousel {
-        display: none;
-    }
     
   }
 

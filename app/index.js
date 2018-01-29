@@ -84,6 +84,14 @@ $(document).ready(function () {
 
     $('#smove_carousel').slick({});
 
+    $('#chor_popup').popup({
+        transition: 'all 0.3s',
+        scrolllock: true,
+        onopen: function() {
+            $('#smove_carousel').css('display', 'block'); 
+            $('#smove_carousel').get(0).slick.setPosition()
+        }
+    });
 
     $('#smove_popup').popup({
         transition: 'all 0.3s',
