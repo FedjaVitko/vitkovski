@@ -16,6 +16,10 @@
     margin-bottom: 1em;
   }
 
+  h1:after {
+    display: none;
+  }
+
   .name_first {
     letter-spacing: 8px;
 

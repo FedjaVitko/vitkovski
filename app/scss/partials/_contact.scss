@@ -13,6 +13,14 @@
         text-align: center;
     }
 
+    svg polygon {
+        fill: rgba($white, 0.6);
+    }
+
+    svg polygon:hover {
+        fill: $white;
+    }
+
     svg:hover {
         cursor: pointer;
     }
