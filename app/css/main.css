@@ -873,7 +873,7 @@ section {
   .about .about-part h3 {
     font-size: 1rem; } }
 
-#smove_popup > div, #chor_popup > div {
+#smove_popup > div, #chor_popup > div, #daily_popup > div, #luke_popup > div, #learnyoutube_popup > div, #gento_popup > div {
   display: flex;
   align-content: space-between;
   flex-direction: column;
@@ -889,7 +889,7 @@ section {
   border: none;
   outline: 0; }
 
-#smove_popup, #chor_popup {
+#smove_popup, #chor_popup, #daily_popup, #luke_popup, #learnyoutube_popup, #gento_popup {
   transform: scale(0.8); }
 
 .content_wrapper {

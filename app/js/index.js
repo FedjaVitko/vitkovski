@@ -101,6 +101,43 @@ $(document).ready(function () {
             $('#smove_carousel').get(0).slick.setPosition()
         }
     });
+
+    $('#daily_popup').popup({
+        transition: 'all 0.3s',
+        scrolllock: true,
+        onopen: function() {
+            $('#smove_carousel').css('display', 'block'); 
+            $('#smove_carousel').get(0).slick.setPosition()
+        }
+    });
+
+    $('#luke_popup').popup({
+        transition: 'all 0.3s',
+        scrolllock: true,
+        onopen: function() {
+            $('#smove_carousel').css('display', 'block'); 
+            $('#smove_carousel').get(0).slick.setPosition()
+        }
+    });
+
+    $('#learnyoutube_popup').popup({
+        transition: 'all 0.3s',
+        scrolllock: true,
+        onopen: function() {
+            $('#smove_carousel').css('display', 'block'); 
+            $('#smove_carousel').get(0).slick.setPosition()
+        }
+    });
+
+    $('#gento_popup').popup({
+        transition: 'all 0.3s',
+        scrolllock: true,
+        onopen: function() {
+            $('#smove_carousel').css('display', 'block'); 
+            $('#smove_carousel').get(0).slick.setPosition()
+        }
+    });
+
     // Add active class
     $('ul .button').click(function(){
         console.log('The button was clicked!');
